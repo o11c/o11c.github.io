@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<root>
+  <foo x="a">aa</foo>
+  <foo x="b">bb</foo>
+  <foo x="c">cc</foo>
+</root>

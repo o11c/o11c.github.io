@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="foo-style.xslt"?>
+<index>
+  <include name="foo-1.xml"/>
+  <include name="foo-2.xml"/>
+</index>
