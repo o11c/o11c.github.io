@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="freeorion-features.xslt"?>
+<?xml-stylesheet type="text/xsl" href="features.xslt"?>
 <features>
   <old-bug>"list view" Research does not update on completion.</old-bug>
   <old-bug>phantom fleets</old-bug>
