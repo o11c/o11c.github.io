@@ -1,8 +1,10 @@
 <?xml version="1.0"?>
 <xsl:stylesheet version="1.0"
+    exclude-result-prefixes="exsl set"
     xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:xhtml="http://www.w3.org/1999/xhtml"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:exsl="http://exslt.org/common"
+    xmlns:set="http://exslt.org/sets"
 >
   <xsl:output method="xml" indent="yes"
       encoding="utf-8"
@@ -16,7 +18,15 @@
     <html>
       <head>
         <title>o11c's notes on FreeOrion bugs / features</title>
-        <style>table, th, td { border: 1px solid black; }</style>
+        <style>
+          table, th, td { border: 1px solid black; }
+          code { font-family: monospace }
+
+          .bug { background-color: #FF8080; }
+          .text { background-color: #FFAA55; }
+          .feature { background-color: #80FF80; }
+          .design { background-color: #FFFF00; }
+        </style>
       </head>
       <body>
         Categories:
@@ -29,15 +39,20 @@
         </ul>
         <xsl:comment>I suck at HTML but at least I can do XSLT</xsl:comment>
         <table>
+          <caption>FreeOrion Wishlist (<xsl:value-of select="count(*)"/> items)</caption>
           <thead>
             <tr>
               <th>Category</th>
+              <th>Priority</th>
+              <th>Difficulty</th>
               <th>Description</th>
             </tr>
           </thead>
           <tfoot>
             <tr>
               <th>Category</th>
+              <th>Priority</th>
+              <th>Difficulty</th>
               <th>Description</th>
             </tr>
           </tfoot>
@@ -50,9 +65,48 @@
   </xsl:template>
 
   <xsl:template match="*">
-    <tr>
+    <tr class="{name()}">
       <td><xsl:value-of select="name()"/></td>
-      <td><xsl:value-of select="text()"/></td>
+      <td><xsl:call-template name="defaulter"><xsl:with-param name="attr" select="@priority"/><xsl:with-param name="def" select="'default'"/></xsl:call-template></td>
+      <td><xsl:call-template name="defaulter"><xsl:with-param name="attr" select="@difficulty"/><xsl:with-param name="def" select="'default'"/></xsl:call-template></td>
+      <td><xsl:for-each select="*|text()"><xsl:copy-of select="."/></xsl:for-each></td>
     </tr>
+  </xsl:template>
+
+  <xsl:template name="defaulter">
+    <xsl:param name="attr"/>
+    <xsl:param name="def"/>
+    <xsl:param name="empty">
+      <span style="color: gray">
+        <xsl:value-of select="$def"/>
+      </span>
+    </xsl:param>
+    <xsl:choose>
+      <!-- Present in xml file with non-empty value. -->
+      <xsl:when test="string($attr)">
+        <xsl:call-template name="tree-or-value"><xsl:with-param name="object" select="$attr"/></xsl:call-template>
+      </xsl:when>
+      <!-- Present in xml file with empty value. -->
+      <xsl:when test="$attr">
+        <xsl:call-template name="tree-or-value"><xsl:with-param name="object" select="$empty"/></xsl:call-template>
+      </xsl:when>
+      <!-- Not present in xml file. -->
+      <xsl:otherwise>
+        <xsl:call-template name="tree-or-value"><xsl:with-param name="object" select="$def"/></xsl:call-template>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <xsl:template name="tree-or-value">
+    <xsl:param name="object"/>
+    <xsl:choose>
+      <!-- copy-of fails on attributes -->
+      <xsl:when test="(exsl:object-type($object) = 'node-set' and not(set:has-same-node($object/parent::node()/@*, $object))) or exsl:object-type($object) = 'RTF'">
+        <xsl:copy-of select="$object"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="$object"/>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 </xsl:stylesheet>

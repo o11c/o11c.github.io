@@ -1,182 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="features.xslt"?>
 <features>
-  <old-bug>"list view" Research does not update on completion.</old-bug>
-  <old-bug>phantom fleets</old-bug>
+  <old-bug priority="" difficulty="">"list view" Research does not update on completion.</old-bug>
+  <old-bug priority="" difficulty="">phantom fleets</old-bug>
 
-  <old-feature>Order Chaining: build shipyard, then build orbital drydock (should be possible by "unavailable", but currently not)</old-feature>
-  <old-feature>Order Chaining: produce colony/outpost ship, then go to this planet, then build a foo building</old-feature>
-  <old-feature>Order Chaining: produce troop ship, then invade this planet</old-feature>
-  <old-feature>Order Chaining: attack this system until everyone is dead, then attack this system</old-feature>
-  <old-feature>Order Chaining: follow one jump behind this fleet (useful to prevent enemies from crossing your jumps)</old-feature>
+  <old-feature priority="" difficulty="">Order Chaining: build shipyard, then build orbital drydock (should be possible by "unavailable", but currently not)</old-feature>
+  <old-feature priority="" difficulty="">Order Chaining: produce colony/outpost ship, then go to this planet, then build a foo building</old-feature>
+  <old-feature priority="" difficulty="">Order Chaining: produce troop ship, then invade this planet</old-feature>
+  <old-feature priority="" difficulty="">Order Chaining: attack this system until everyone is dead, then attack this system</old-feature>
+  <old-feature priority="" difficulty="">Order Chaining: follow one jump behind this fleet (useful to prevent enemies from crossing your jumps)</old-feature>
 
-  <old-feature>Production Groups: Produce 1 small troop ship and 2 large troop ships in the same fleet.</old-feature>
-  <old-feature>Production Groups: Implicit group naming.</old-feature>
+  <old-feature priority="" difficulty="">Production Groups: Produce 1 small troop ship and 2 large troop ships in the same fleet.</old-feature>
+  <old-feature priority="" difficulty="">Production Groups: Implicit group naming.</old-feature>
 
-  <old-feature>Production Priorities: Divide all items into "low", "medium", "high". All "high" elements will be
+  <old-feature priority="" difficulty="">Production Priorities: Divide all items into "low", "medium", "high". All "high" elements will be
   completed immediately, "medium" items will then be ordered optimally.
   Finally, "low" items will be used to "soak" the points. "low" elements
   may be marked "repeat" or not, to alter the soaking characteristics
-  (useful for terraforming -> gaia).</old-feature>
+  (useful for terraforming -&gt; gaia).</old-feature>
 
-  <old-design>Variable cost correction: For things that get more expensive, don't make them always take 1 more turn.</old-design>
-  <old-design>Variable cost correction: Also beware of numerical stability problems (multiply by 1 + 2ε)</old-design>
+  <old-design priority="" difficulty="">Variable cost correction: For things that get more expensive, don't make them always take 1 more turn.</old-design>
+  <old-design priority="" difficulty="">Variable cost correction: Also beware of numerical stability problems (multiply by 1 + 2ε)</old-design>
 
-  <old-feature>Smarter pathfinding: awareness of supply length</old-feature>
-  <old-feature>Smarter pathfinding: avoid jumping into a hostile system</old-feature>
-  <old-feature>Smarter pathfinding: deliberate delays for synchonization</old-feature>
-  <old-feature>Smarter pathfinding: fleet split/join while jumping</old-feature>
-  <old-feature>Smarter pathfinding: pathfinding through stargates (instead of current send/receive focus)</old-feature>
+  <old-feature priority="" difficulty="">Smarter pathfinding: awareness of supply length</old-feature>
+  <old-feature priority="" difficulty="">Smarter pathfinding: avoid jumping into a hostile system</old-feature>
+  <old-feature priority="" difficulty="">Smarter pathfinding: deliberate delays for synchonization</old-feature>
+  <old-feature priority="" difficulty="">Smarter pathfinding: fleet split/join while jumping</old-feature>
+  <old-feature priority="" difficulty="">Smarter pathfinding: pathfinding through stargates (instead of current send/receive focus)</old-feature>
 
-  <old-feature>Colonization planning: list of most habitable planets</old-feature>
-  <old-feature>Colonization planning: list of planets with missing/better/always-on traits (growth x3 per type, computronium, ancient ruins, etc)</old-feature>
+  <old-feature priority="" difficulty="">Colonization planning: list of most habitable planets</old-feature>
+  <old-feature priority="" difficulty="">Colonization planning: list of planets with missing/better/always-on traits (growth x3 per type, computronium, ancient ruins, etc)</old-feature>
 
-  <old-feature>Split buildings: Shipyards, Empire boosts, Other</old-feature>
-  <old-feature>Split buildings: Also remove the ability to schedule them twice.</old-feature>
+  <old-feature priority="" difficulty="">Split buildings: Shipyards, Empire boosts, Other</old-feature>
+  <old-feature priority="" difficulty="">Split buildings: Also remove the ability to schedule them twice.</old-feature>
 
-  <old-feature>SitRep checklist: Mark each SitRep item as "taken care of" or "ask again next turn".</old-feature>
-  <old-feature>SitRep checklist: Deny turn change until SitRep checklist is done.</old-feature>
-  <old-feature>SitRep checklist: Also do subitems (SitRep as a tree)?</old-feature>
+  <old-feature priority="" difficulty="">SitRep checklist: Mark each SitRep item as "taken care of" or "ask again next turn".</old-feature>
+  <old-feature priority="" difficulty="">SitRep checklist: Deny turn change until SitRep checklist is done.</old-feature>
+  <old-feature priority="" difficulty="">SitRep checklist: Also do subitems (SitRep as a tree)?</old-feature>
 
-  <old-feature>Better ruins: Don't reveal the same tech/building multiple times.</old-feature>
-  <old-feature>Better ruins: Always produce *something* - fall back to lots of dragon tooth ships.</old-feature>
+  <old-feature priority="" difficulty="">Better ruins: Don't reveal the same tech/building multiple times.</old-feature>
+  <old-feature priority="" difficulty="">Better ruins: Always produce *something* - fall back to lots of dragon tooth ships.</old-feature>
 
-  <old-feature>Research: Show depth-2 items.</old-feature>
-  <old-feature>Research: Ability to permanently hide elements (e.g. the basic armor tree if I go straight for asteroid armor).</old-feature>
-  <old-feature>Research: Also allow hiding in ship design.</old-feature>
+  <old-feature priority="" difficulty="">Research: Show depth-2 items.</old-feature>
+  <old-feature priority="" difficulty="">Research: Ability to permanently hide elements (e.g. the basic armor tree if I go straight for asteroid armor).</old-feature>
+  <old-feature priority="" difficulty="">Research: Also allow hiding in ship design.</old-feature>
 
-  <old-feature>Better object search: Remember the last search.</old-feature>
-  <old-feature>Better object search: Fewer menus.</old-feature>
-  <old-feature>Better object search: Add missing column types (special; sort by terrain; ...)</old-feature>
-  <old-feature>Better object search: Global fleet window.</old-feature>
-  <old-feature>Better object search: Derelicts ???</old-feature>
-  <old-feature>Better object search: Compound searches, e.g.    owned by me &amp;&amp; species != '' &amp;&amp; size >= large &amp;&amp; not has_special('gaia')</old-feature>
-  <old-feature>Better object search: List of fleets going to this system</old-feature>
+  <old-feature priority="" difficulty="">Better object search: Remember the last search.</old-feature>
+  <old-feature priority="" difficulty="">Better object search: Fewer menus.</old-feature>
+  <old-feature priority="" difficulty="">Better object search: Add missing column types (special; sort by terrain; ...)</old-feature>
+  <old-feature priority="" difficulty="">Better object search: Global fleet window.</old-feature>
+  <old-feature priority="" difficulty="">Better object search: Derelicts ???</old-feature>
+  <old-feature priority="" difficulty="">Better object search: Compound searches, e.g. <code>owned by me &amp;&amp; species != '' &amp;&amp; size &gt;= large &amp;&amp; not has_special('gaia')</code></old-feature>
+  <old-feature priority="" difficulty="">Better object search: List of fleets going to this system</old-feature>
 
 
-  <feature>Groups of ships. Also buildings?</feature>
+  <feature priority="high" difficulty="moderate">Groups of ships. Also buildings?</feature>
 
-  <feature>In SitRep, group various things under Combat.</feature>
+  <feature priority="medium" difficulty="easy">In SitRep, group various things under Combat.</feature>
 
-  <feature>Instead of actually disappearing, dismissed notifications should go under
+  <feature priority="high" difficulty="moderate">Instead of actually disappearing, dismissed notifications should go under
   a "N dismissed" category.</feature>
 
-  <bug>Don't use CPU when not visible (minimized or on other desktop)! Should also use less CPU anyway, "limit FPS" is not effective, I only get 15 FPS or so anyway.</bug>
-  <design>FreeOrion would much benefit from a GUI-style "redraw only damaged portions" logic rather than a game-style "redraw the whole frame every time" logic.</design>
+  <bug     priority="high" difficulty="easy">Don't use CPU when not visible (minimized or on other desktop)! Should also use less CPU anyway, "limit FPS" is not effective, I only get 15 FPS or so anyway.</bug>
+  <design  priority="high" difficulty="hard">FreeOrion would much benefit from a GUI-style "redraw only damaged portions" logic rather than a game-style "redraw the whole frame every time" logic.</design>
 
-  <feature>In census, show ability to build ships and colonize, as well as preference and broadness.</feature>
+  <feature priority="high" difficulty="easy">In census, show ability to build ships and colonize, as well as preference and broadness.</feature>
 
-  <bug>Orbital Drydock repair messages aren't given on the turn it is constructed.</bug>
+  <bug     priority="low" difficulty="easy">Orbital Drydock repair messages aren't given on the turn it is constructed.</bug>
 
-  <feature>Ability to dismiss tech tree upgrades (e.g. skip the plain armor tree and wait for asteroid armor)</feature>
+  <feature priority="medium" difficulty="moderate">Ability to dismiss tech tree upgrades (e.g. skip the plain armor tree and wait for asteroid armor)</feature>
 
-  <feature>Ability to dismiss buildings.</feature>
+  <feature priority="high" difficulty="moderate">Ability to dismiss buildings.</feature>
 
-  <feature>Show white stripes in system name if there are some natives not in the empire yet.</feature>
+  <feature priority="low" difficulty="easy">Show white stripes in system name if there are some natives not in the empire yet.</feature>
 
-  <feature>Meta fleets (can cross systems). New UI for this.</feature>
+  <feature priority="low" difficulty="hard">Meta fleets (can cross systems). New UI for this.</feature>
 
-  <bug>ship sometimes points the wrong way in the middle of a jump (due south). Fixed by zooming in until the icon changed, then zooming out again.</bug>
+  <bug     priority="low" difficulty="moderate">ship sometimes points the wrong way in the middle of a jump (due south). Fixed by zooming in until the icon changed, then zooming out again.</bug>
 
-  <feature>For "max" values, consider "if maximum population"</feature>
+  <feature priority="medium" difficulty="moderate">For "max" values, consider "if maximum population"</feature>
 
-  <feature>In production menu, show *where* the wasted production is in case of blockages.</feature>
+  <feature priority="medium" difficulty="moderate">In production menu, show *where* the wasted production is in case of blockages.</feature>
 
-  <design>Don't count local ships toward the count. Do cost-of-empire by PP cost, not number of ships (still exploitable, but much harder).</design>
+  <design  priority="low" difficulty="moderate">Don't count local ships toward the count. Do cost-of-empire by PP cost, not number of ships (still exploitable, but much harder).</design>
 
-  <feature>Ships in combat should not count as idle (possible exception: when bombarding a planet with more than the minimum number of ships).</feature>
+  <feature priority="high" difficulty="moderate">Ships in combat should not count as idle (possible exception: when bombarding a planet with more than the minimum number of ships).</feature>
 
-  <feature>Automatically set "auto" research priority (lower than high/medium/low).</feature>
-  <feature>On high: attempt to finish anything as soon as possible.</feature>
-  <feature>On medium: attempt to finish all at the same time (same algorithm as auto).</feature>
-  <feature>On low: attempt to soak as many points as possible for as long as possible.</feature>
-  <feature>On auto: attempt to research *everything*. Start at the leaves of the graph, order by per-turn cost.</feature>
+  <feature priority="medium" difficulty="hard">Automatically set "auto" research priority (lower than high/medium/low).</feature>
+  <feature priority="medium" difficulty="hard">On high: attempt to finish anything as soon as possible.</feature>
+  <feature priority="medium" difficulty="hard">On medium: attempt to finish all at the same time (same algorithm as auto).</feature>
+  <feature priority="medium" difficulty="hard">On low: attempt to soak as many points as possible for as long as possible.</feature>
+  <feature priority="medium" difficulty="hard">On auto: attempt to research *everything*. Start at the leaves of the graph, order by per-turn cost.</feature>
 
-  <text>Meaning of "dismiss for N turns" is confusing.</text>
+  <text    priority="high" difficulty="easy">Meaning of "dismiss for N turns" is confusing.</text>
 
-  <feature>In sitrep, still show empty turns, but group empty turns together.</feature>
+  <feature priority="low" difficulty="moderate">In sitrep, still show empty turns, but group empty turns together.</feature>
 
-  <feature>On system map, don't show systems with no planets, and show systems with only uninhabitable planets differently.</feature>
+  <feature priority="medium" difficulty="moderate">On system map, don't show systems with no planets, and show systems with only uninhabitable planets differently.</feature>
 
-  <feature>Make molecular cloud more scary looking (possibly highlight the "0 shields" in red)</feature>
+  <feature priority="low" difficulty="easy">Make molecular cloud more scary looking (possibly highlight the "0 shields" in red)</feature>
 
-  <feature>Show Xenophobic as a category under census (I kill all Xenophobes).</feature>
+  <feature priority="medium" difficulty="easy">Show Xenophobic as a category under census (I kill all Xenophobes).</feature>
 
-  <feature>For production multiplier dropdowns, don't go off the bottom of the screen.</feature>
+  <feature priority="high" difficulty="moderate">For production multiplier dropdowns, don't go off the bottom of the screen.</feature>
 
-  <feature>Auto-split drop ships from fleet.</feature>
+  <feature priority="medium" difficulty="moderate">Auto-split drop ships from fleet.</feature>
 
-  <feature>Multi-sort objects (currently does not persist).</feature>
+  <feature priority="medium" difficulty="moderate">Multi-sort objects (currently does not persist).</feature>
 
-  <bug>Object sort still shows nonexistent objects.</bug>
+  <bug     priority="high" difficulty="moderate">Object sort still shows nonexistent objects.</bug>
 
-  <bug>Terraforming Reversion is available on unchanged planets.</bug>
+  <bug     priority="low" difficulty="easy">Terraforming Reversion is available on unchanged planets.</bug>
 
-  <design>Count asteroids as size 0. Give them particular modifiers to everything instead.</design>
+  <design  priority="low" difficulty="moderate">Count asteroids as size 0. Give them particular modifiers to everything instead.</design>
 
-  <design>Allow repopulating a planet with multiple species directly.</design>
+  <design  priority="low" difficulty="moderate">Allow repopulating a planet with multiple species directly.</design>
 
-  <feature>Hide (not disallow, that needs to be different!) plain buildings once transformer is available.</feature>
+  <feature priority="medium" difficulty="easy">Hide (not disallow, that needs to be different!) plain buildings once transformer is available.</feature>
 
-  <feature>Create "Abandoned Colony" specials when evacuating a planet; remove after settling.</feature>
+  <design  priority="low" difficulty="moderate">Create "Abandoned Colony" specials when evacuating a planet; remove after settling.</design>
 
-  <bug>Scouts get random "waiting for fuel" for no reason.</bug>
+  <bug     priority="medium" difficulty="moderate">Scouts get random "waiting for fuel" for no reason.</bug>
 
-  <feature>On each planet, show a "N" for how many ships are being produced (not just buildings).</feature>
+  <feature priority="high" difficulty="moderate">On each planet, show a "N" for how many ships are being produced (not just buildings).</feature>
 
-  <feature>Don't show (hostile) etc notes on planets when placing outposts.</feature>
+  <feature priority="medium" difficulty="easy">Don't show (hostile) etc notes on planets when placing outposts.</feature>
 
-  <feature>In pedia "objects with special", "homeworlds", etc provided a nested "objects" table.</feature>
+  <feature priority="medium" difficulty="hard">In pedia "objects with special", "homeworlds", etc provided a nested "objects" table.</feature>
 
-  <feature>In pedia "objects with special", show "focused" separate.</feature>
+  <feature priority="high" difficulty="easy">In pedia "objects with special", show "focused" separate.</feature>
 
-  <feature>Remember multiple filters and sorts, and show them in the table.</feature>
+  <feature priority="medium" difficulty="moderate">Remember multiple filters and sorts, and show them in the table.</feature>
 
-  <feature>Allow insert/delete of a column instead of just at the end.</feature>
+  <feature priority="medium" difficulty="moderate">Allow insert/delete of a column instead of just at the end.</feature>
 
-  <bug>Focus dropdown can also go off the bottom of the screen.</bug>
+  <bug     priority="high" difficulty="moderate">Focus dropdown can also go off the bottom of the screen.</bug>
 
-  <bug>Don't freeze the UI while recalculating production.</bug>
+  <bug     priority="high" difficulty="hard">Don't freeze the UI while recalculating production.</bug>
 
-  <bug>Disallow "artificial X world" when *any* of them is activated.</bug>
+  <bug     priority="medium" difficulty="easy">Disallow "artificial X world" when *any* of them is activated.</bug>
 
-  <bug>Disallow colonies when *any* of them is activated.</bug>
+  <bug     priority="medium" difficulty="easy">Disallow colonies when *any* of them is activated.</bug>
 
-  <feature>Filtering by "Species Name: &lt;empty&gt;" should list all inhabited planets (i.e. exclude outposts) instead of returning nothing. Though maybe listing outposts only would also be useful ...</feature>
+  <feature priority="low" difficulty="easy">Filtering by "Species Name: &lt;empty&gt;" should list all inhabited planets (i.e. exclude outposts) instead of returning nothing. Though maybe listing outposts only would also be useful ...</feature>
 
-  <feature>Add "Owner Empire: None".</feature>
+  <feature priority="low" difficulty="easy">Add "Owner Empire: None".</feature>
 
-  <feature>Remember a list of recent object filters.</feature>
+  <feature priority="medium" difficulty="hard">Remember a list of recent object filters.</feature>
 
-  <feature>Require less dropdowns to add a filter (display options without dropping down) once major type is selected.</feature>
+  <feature priority="high" difficulty="moderate">Require less dropdowns to add a filter (display options without dropping down) once major type is selected.</feature>
 
-  <design>Drop the number of planet types from 9 to 7. Possibly eliminate barren (merge to radiated) and swamp (merge to toxic).</design>
+  <design  priority="low" difficulty="easy">Drop the number of planet types from 9 to 7. Possibly eliminate barren (merge to radiated) and swamp (merge to toxic).</design>
 
-  <feature>Create an entirely new Production window, make it focused on technology (and choose a planet) rather than vice versa like the current one.</feature>
+  <feature priority="high" difficulty="hard">Create an entirely new Production window, make it focused on technology (and choose a planet) rather than vice versa like the current one.</feature>
 
-  <design>Possibly add an "in shipyard" state that protects ships from hostiles?</design>
+  <design  priority="low" difficulty="hard">Possibly add an "in shipyard" state that protects ships from hostiles?</design>
 
-  <bug>"Abandoned Colony" seems to be ineffective if planet is outposted first and then colonized from a building.</bug>
+  <bug     priority="medium" difficulty="moderate">"Abandoned Colony" seems to be ineffective if planet is outposted first and then colonized from a building.</bug>
 
-  <feature>Allow "scrap building" on buildings that aren't complete.</feature>
+  <feature priority="medium" difficulty="easy">Allow "scrap building" on buildings that aren't complete.</feature>
 
-  <design>Don't add features in a 0.x.y release, only in a 0.x.0 release.</design>
+  <design  priority="high" difficulty="easy">Don't add features in a 0.x.y release, only in a 0.x.0 release.</design>
 
-  <feature>Allow recovering cancelled production before end of turn.</feature>
+  <feature priority="high" difficulty="moderate">Allow recovering cancelled production before end of turn.</feature>
 
-  <feature>Default "owner empire" to self.</feature>
+  <feature priority="medium" difficulty="easy">Default "owner empire" to self.</feature>
 
-  <bug>Why is max CPU used in both the server *and* the client when calculating next turn?</bug>
+  <bug     priority="high" difficulty="hard">Why is max CPU used in both the server *and* the client when calculating next turn?</bug>
 
-  <bug>Server memory use significantly increases over time.</bug>
+  <bug     priority="high" difficulty="hard">Server memory use significantly increases over time.</bug>
 
-  <bug>Exobots are shown as potential colonizers even before the technology is researched.</bug>
+  <bug     priority="low" difficulty="easy">Exobots are shown as potential colonizers even before the technology is researched.</bug>
 
-  <feature>Make it more obvious when a planet is stealthy.</feature>
+  <feature priority="medium" difficulty="easy">Make it more obvious when a planet is stealthy.</feature>
 
-  <bug>Alt-f between fleets is unreliable, it may sometimes visit fleets twice, and it may or may not visit a "no fleet".</bug>
+  <bug     priority="medium" difficulty="moderate">Alt-f between fleets is unreliable, it may sometimes visit fleets twice, and it may or may not visit a "no fleet".</bug>
 
-  <feature>Dragging the order of the research queue should force dependencies to follow.</feature>
+  <feature priority="low" difficulty="moderate">Dragging the order of the research queue should force dependencies to follow.</feature>
 
-  <bug>SitRep dismissals persist after save/reload or new game.</bug>
+  <bug     priority="high" difficulty="easy">SitRep dismissals persist after save/reload or new game.</bug>
 </features>
