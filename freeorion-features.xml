@@ -169,4 +169,14 @@
   <bug>Why is max CPU used in both the server *and* the client when calculating next turn?</bug>
 
   <bug>Server memory use significantly increases over time.</bug>
+
+  <bug>Exobots are shown as potential colonizers even before the technology is researched.</bug>
+
+  <feature>Make it more obvious when a planet is stealthy.</feature>
+
+  <bug>Alt-f between fleets is unreliable, it may sometimes visit fleets twice, and it may or may not visit a "no fleet".</bug>
+
+  <feature>Dragging the order of the research queue should force dependencies to follow.</feature>
+
+  <bug>SitRep dismissals persist after save/reload or new game.</bug>
 </features>
